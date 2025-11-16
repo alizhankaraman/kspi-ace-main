@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "http://127.0.0.1:8000/api/",
+  baseURL: "http://https://kspi-ace-main.onrender.com/api/",
 });
 
 axiosInstance.interceptors.request.use((config) => {
@@ -23,7 +23,7 @@ axiosInstance.interceptors.response.use(
 
       if (refresh) {
         try {
-          const res = await axios.post("http://127.0.0.1:8000/api/auth/token/refresh/", {
+          const res = await axios.post("https://kspi-ace-main.onrender.com/api/auth/token/refresh/", {
             refresh,
           });
           localStorage.setItem("access", res.data.access);
