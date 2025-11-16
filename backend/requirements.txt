@@ -1,2 +1,7 @@
-gunicorn==23.0.0
-packaging==25.0
+Django==5.2.8
+djangorestframework
+channels
+psycopg2-binary
+gunicorn
+django-cors-headers
+djangorestframework_simplejwt
